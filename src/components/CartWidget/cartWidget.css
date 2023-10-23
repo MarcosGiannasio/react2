@@ -1,0 +1,10 @@
+.cart {
+          font-size: 30px;
+          color:  rgb(141, 39, 125);
+          font-weight: bold;
+}
+
+.numberCart {
+          text-decoration: none;
+          color:  rgb(141, 39, 125);
+}
