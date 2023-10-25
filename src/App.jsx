@@ -14,19 +14,31 @@ import CartProvider from './context/CartContext';
 function App () {
 
   return (
-    
-    <BrowserRouter>
-    <CartProvider>
-      
-      <NavBar/>
-      <Routes> 
-        <Route exact path='/' element={<ItemListContainer texto="TU CASA, COMO SIEMPRE SOÑASTE..."/>}/>
-        <Route exact path="/category/:categoryName" element={<ItemListContainer/>}/>
-        <Route exact path='/cart' element={<Cart/>}/>
-        <Route exact path="/description/:descriptionId" element={<ItemDetailContainer/>}/>
-      </Routes>
-    </CartProvider>
-    </BrowserRouter>
+     <BrowserRouter>
+        <CartProvider>
+           <NavBar />
+           <Routes>
+              <Route
+                 exact
+                 path="/"
+                 element={
+                    <ItemListContainer texto="TU CASA, COMO SIEMPRE SOÑASTE..." />
+                 }
+              />
+              <Route
+                 exact
+                 path="/category/:categoryName"
+                 element={<ItemListContainer />}
+              />
+              <Route exact path="/cart" element={<Cart />} />
+              <Route
+                 exact
+                 path="/description/:descriptionId"
+                 element={<ItemDetailContainer />}
+              />
+           </Routes>
+        </CartProvider>
+     </BrowserRouter>
   );
 }
 

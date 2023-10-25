@@ -9,8 +9,10 @@ import Cart from "../Cart";
 
 export const CartWidget =() => {
   return (
-          <Link to="/cart" className="cart" href=""><i className="bi bi-cart3" ></i></Link>
-          );
+     <Link to="/cart" className="cart">
+        <i className="bi bi-cart3"></i>
+     </Link>
+  );
 
 }
 

@@ -9,8 +9,8 @@ const Item = ({info}) => {
 
           return (
           < div className="container">
-          <div className="mb-5 row">
-                    <div className="card product col-12 shadow  mb-5 rounded">
+          <div className="row">
+                    <div className="card col  mb-5 rounded align-items-center">
                               <img className="img mt-0 pt-0" src={info.image} width={125} alt="imagenProducto"/>
                               <Link to="/Description/descriptionId" className="h4 text-decoration-none"><h4>{info.title}</h4></Link>
                               <span className="" style={{color:"red"}}> <strong>$ {info.price}</strong></span>
